@@ -1,8 +1,7 @@
-
 Name: main_fullstack_workflow
 SchemaVersion: "1.0"
 Triggers:
-  - Type: PUSH
+  - Type: Push
     Branches:
       - main
 Actions:
