@@ -1,0 +1,9 @@
+{
+  "script": [
+    "source .venv/bin/activate",
+    "pytest --junitxml=test_unit_results.xml --cov-report xml:test_unit_coverage.xml --cov=. tests/unit",
+    "pytest --junitxml=test_integ_results.xml --cov-report xml:test_integ_coverage.xml --cov=. tests/integ"
+  ],
+  "working_dir": "/projects/todo-app/backend",
+  "info": "This runner executes the unit and integration tests, and generates a code coverage report."
+}

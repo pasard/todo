@@ -1,0 +1,10 @@
+{
+  "script": [
+    "python3 -m venv .venv",
+    "source .venv/bin/activate",
+    "pip install -r requirements.txt",
+    "cdk synth"
+  ],
+  "working_dir": "/projects/todo-app/backend",
+  "info": "This runner builds backend of To Do Application by creating the virtual environment, installing all the dependencies, and synthesizing the CloudFormation Template."
+}
